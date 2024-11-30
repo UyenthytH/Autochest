@@ -25,7 +25,7 @@ end
 
 -- Script 3
 local script3 = "print('Script 3 activated!')"
-local func3 = loadstring(game:HttpGet("https://raw.githubusercontent.com/UyenthytH/Autochest/refs/heads/main/ChestPART1"))()
+local func3 = loadstring(game:HttpGet("https://pastefy.app/RjnHLCg9/raw"))()
 if func3 then
     func3()
 end
